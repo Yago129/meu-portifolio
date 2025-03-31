@@ -1,0 +1,250 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: #fffefe; /* Texto branco */
+  background-color: #000000; /* Fundo preto */
+}
+
+/* Div do gradiente de fundo */
+#gradient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca o gradiente atrás de todo o conteúdo */
+  background: linear-gradient(to bottom, #000000, #1a2e1a); /* Gradiente inicial */
+}
+
+/* Cabeçalho */
+header {
+  background: transparent;
+  color: #ffffff;
+  padding: -10rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #1a2e1a; /* Verde escuro */
+  color: #ffffff;
+}
+
+/* Seções */
+section {
+  padding: 4rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Seção Home */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+
+/* Seção Sobre */
+.sobre {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Faz a seção ocupar 100% da altura da tela */
+  text-align: center; /* Centraliza o texto */
+  background-color: transparent; /* Fundo transparente */
+}
+
+.sobre .container {
+  max-width: 600px; /* Largura máxima do conteúdo */
+}
+
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+.sobre h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sobre p {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+}
+
+.habilidades {
+  margin-top: 2rem;
+}
+
+.habilidades h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.habilidades ul {
+  list-style: none;
+}
+
+.habilidades li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Seção Projetos */
+.projetos {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+}
+
+.projetos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projeto-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projeto-card p {
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+form button {
+  background-color: #1a2e1a; /* Verde escuro */
+  color: #ffffff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2e1a2e; /* Roxo suave */
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 4rem;
+}
+#logo-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+#logo-button img {
+ width: 60px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+#logo-button:hover img {
+  transform: scale(1.1);
+}
