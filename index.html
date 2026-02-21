@@ -3,73 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
+  <title>Yago Corrêa | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Div para o gradiente de fundo -->
   <div id="gradient-background"></div>
 
-  <!-- Cabeçalho -->
-  <header id="header">
-    <nav>
-      <button id="logo-button">
-        <img src="Logo simples circular esmaltaria preto.png" alt="Logo" width="50" height="50">
-      </button>
+  <header>
+    <nav class="container">
+      <div class="logo">YC</div>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#projetos">Projetos</a></li>
+        <li><a href="https://github.com/Yago129" target="_blank" class="github-nav">GitHub</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Seção Home -->
-  <section id="home" class="home">
-    <div class="container">
+  <main>
+    <section id="home" class="home container">
       <h2>Olá, Seja Bem-vindo!</h2>
-      <p>Sou Yago Ferreira Corrêa.</p>
-      <p>Engenheiro de Software</p>
-    </div>
-  </section>
+      <p>Sou <strong>Yago Corrêa</strong></p>
+      <p>Estudante de Engenharia de Software focado em soluções robustas com <strong>Node.js, Python e Docker</strong>.</p>
+    </section>
 
-  <!-- Seção Sobre -->
-  <section id="sobre" class="sobre">
-    <div class="container">
-      <h2>Sobre Mim</h2>
-      <p>Olá, sou Yago Correa,  Atualmente, estou dedicado a faculdade engenharia de software . Nessa área e já adquiri habilidades sólidas em linguagens e texto de marcação como Python , Java script , Css ,HTML ,  Minha paixão pela tecnologia e minha sede de aprendizado são motores que me impulsionam a crescer constantemente. Acredito que posso fazer a diferença em qualquer empresa que me ofereça uma oportunidade. Vamos nos conectar e explorar como posso contribuir para o sucesso de seu projeto ou organização!
-        .</p>
-      <div class="habilidades">
-        <h3>Habilidades</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript, Python</li>
-          <li>React, Node.js</li>
-          <li>Banco de Dados (SQL, MongoDB)</li>
-          <img src="icons8-html-5-50 (1).png
-          "sizes="" srcset="">
-          <img src="icons8-python-50.png" alt="" sizes="" srcset="">
-          <img src="icons8-sql-50 (1).png" alt="" sizes="" srcset="">
-      
-
-        </ul>
+    <section id="sobre" class="container">
+      <div class="sobre-texto">
+        <h2>Sobre Mim</h2>
+        <p>
+          Atualmente no 6º período de Engenharia de Software na Universidade Vassouras, dedico-me a construir aplicações eficientes e escaláveis. 
+          Tenho experiência prática no desenvolvimento de sistemas full stack, utilizando <strong>Node.js</strong> para o backend 
+          e <strong>PostgreSQL</strong> para gestão de dados. Sou entusiasta da cultura DevOps, aplicando <strong>Docker</strong> 
+          para garantir a consistência de ambientes de desenvolvimento e produção.
+        </p>
       </div>
-    </div>
-  </section>
 
-  <!-- Seção Projetos -->
-  <section id="projetos" class="projetos">
-    <div class="container">
+      <div class="habilidades-container">
+        <h3>Minhas Tech Skills</h3>
+        <div class="habilidades-list">
+          <span class="habilidade-item">Node.js</span>
+          <span class="habilidade-item">Docker</span>
+          <span class="habilidade-item">TypeScript</span>
+          <span class="habilidade-item">React.js</span>
+          <span class="habilidade-item">Python</span>
+          <span class="habilidade-item">PostgreSQL</span>
+          <span class="habilidade-item">JavaScript (ES6+)</span>
+          <span class="habilidade-item">SQL</span>
+          <span class="habilidade-item">Metodologias Ágeis</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="container">
       <h2>Meus Projetos</h2>
-      <div class="projetos-grid" id="projetos-grid">
-    
-        <!-- Projetos serão inseridos aqui via JavaScript -->
-      </div>
-    </div>
-  </section>
+      <div class="projetos-grid">
+        
+        <div class="projeto-card">
+          <div class="projeto-header">
+            <h3>Lartop - Marketplace de Serviços</h3>
+            <span class="status-badge">Live</span>
+          </div>
+          
+          <p>Plataforma robusta focada em conectar clientes a profissionais em Maricá. Inclui gestão de ordens de serviço, processamento de imagens na nuvem com Cloudinary e banco de dados gerenciado via Neon.tech.</p>
+          
+          <div class="tags">
+            <span>Node.js</span>
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+          </div>
 
-  <!-- Rodapé -->
+          <div class="projeto-links">
+            <a href="https://lartop.vercel.app/" target="_blank" class="btn-github">Acessar Plataforma</a>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <h3>Automação de Processos</h3>
+          <p>Scripts em Python para otimização de tarefas repetitivas e integração com ambientes containerizados via Docker.</p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Docker</span>
+          </div>
+          <div class="projeto-links">
+            <a href="https://github.com/Yago129" target="_blank" class="btn-github">Ver Repositório</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2023 Yago Corrêa. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>&copy; 2026 Yago Corrêa. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
